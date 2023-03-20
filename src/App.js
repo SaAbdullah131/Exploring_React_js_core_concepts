@@ -3,44 +3,49 @@ import './App.css';
 
 
 const number = 5555;
-const singer ={name:'Dr.Mahfuz',job:'Singer'};
-const singer2 = {name:'Eva Rahman',job:'Singer2'};
+const singer = { name: 'Dr.Mahfuz', job: 'Singer' };
+const singer2 = { name: 'Eva Rahman', job: 'Singer2' };
 
 const singerStyle = {
-  color:'purple',
-  backgroundColor:'white'
+  color: 'purple',
+  backgroundColor: 'white'
 
 }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>JSX</h1>
-        <div className="container">
-          <h3>Hello Dude ..React .How are You?</h3>
-        </div>
-         <div className="music">
-          <p>Numbers is : {222 + number}</p>
-          <p style={singerStyle}>Name: {singer.name} {singer.job}</p>
-          <p style={{color:'green',backgroundColor:'white'}}>Name: {singer2.name} {singer2.job}</p>
-          
-        </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <h5>New Component.YAY !!</h5>
+      <p>Rock Mama ..React Mama</p>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
     </div>
   );
+}
+
+function Person() {
+  return (
+    <div className='person'>
+    <h1>Sakib Al Hasan</h1>
+    <p>Profession: Cricketer</p>
+  </div>
+
+  )
+}
+
+function Friend() {
+  return (
+    <div className='container'>
+      <h3>Name: Ajay Devgun</h3>
+      <p>Job:Maramari</p>
+    </div>
+    
+    )
 }
 
 export default App;
